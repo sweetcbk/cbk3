@@ -1,7 +1,6 @@
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
-
 RewriteEngine on
 RewriteBase /
 RewriteCond %{HTTP_USER_AGENT} almaden [OR]
